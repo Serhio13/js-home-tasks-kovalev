@@ -1,13 +1,11 @@
 var object = {
-    className: 'open menu menu'
+    className: 'open menu menu aaa menu menu aaa aaa'
 };
 
 function removeClassName(obj, cls) {
-    var arr = Object.values(obj);
-    var str = arr.join();
     var reg = new RegExp(cls, 'g');
-    var newstr = str.replace(reg, '');
-    var result = newstr.trim();
+    var newstr = obj.className.replace(reg, '');
+    var result = newstr.replace(/ +/g, ' ').trim();
     
     object.className = result;
 }
