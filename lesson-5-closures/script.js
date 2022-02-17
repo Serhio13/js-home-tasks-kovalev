@@ -10,7 +10,7 @@ var bills = {
       var value = this.johnBills[i];
       if (value < 50) {
         tip = value * (20/100);
-      } else if (50 < i < 200) {
+      } else if (value > 50 && value < 200) {
         tip = value * (15/100);
       } else {
         tip = value * (10/100);
@@ -23,7 +23,7 @@ var bills = {
       var value = this.markBills[i];
       if (value < 100) {
         tip = value * (20/100);
-      } else if (100 < i < 300) {
+      } else if (value > 100 && value < 300) {
         tip = value * (10/100);
       } else {
         tip = value * (25/100);
