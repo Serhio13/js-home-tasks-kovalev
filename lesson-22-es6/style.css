@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    background-color: #babd30;
+    color: #000000;
+}
+
+a{
+    display: block;
+    font-size: 1.5em;
+    color: #000000;
+    cursor: pointer;
+}
+
+a:visited {
+    color: rgba(105, 64, 180, 0.3);
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 600px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#page>*{
+    line-height: 20px;
+    padding: 10px;
+}
+
+.content {
+    font-size: 2em;
+}
